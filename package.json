@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashant1k99/postfolio-static.git"
+  },
+  "author": "Prashant Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashant1k99/postfolio-static/issues"
+  },
+  "homepage": "https://github.com/prashant1k99/postfolio-static#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.3",
+    "vite": "^2.0.5"
+  }
+}
