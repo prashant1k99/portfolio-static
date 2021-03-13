@@ -1,4 +1,8 @@
 @tailwind base;
 @tailwind components;
 
+.chip {
+  @apply py-0.5 rounded-full px-2.5 text-base border inline-block cursor-pointer;
+}
+
 @tailwind utilities;
