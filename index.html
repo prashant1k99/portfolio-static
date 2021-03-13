@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="bg-gray-100 dark:bg-gray-700 h-full w-full text-gray-600 dark:text-gray-300">
+<body class="bg-yellow-100 dark:bg-gray-700 h-full w-full text-gray-600 dark:text-gray-300">
   <div class="max-w-4xl m-auto">
     <div class="mx-4 my-8 sm:m-16 space-y-10 sm:space-y-16">
       <!-- Overview Section -->
@@ -19,7 +19,7 @@
               <img class="h-28 sm:h-32 w-100 rounded-full p-1" src="assets/image.JPG" alt="Prashant Profile Iamge" />
             </div>
             <div class="flex mt-6 sm:-mt-2 sm:mb-1 justify-center space-x-2">
-              <div class="bg-blue-800 rounded-md dark:border-1 dark:border-gray-100">
+              <div class="bg-blue-800 rounded-md focus:outline-none focus:ring-offset-green-500 cursor-pointer" tabindex="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -35,7 +35,7 @@
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               </div>
-              <div class="bg-black rounded-md">
+              <div class="bg-gray-900 rounded-md focus:outline-none focus:ring-offset-red-400 cursor-pointer" tabindex="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -49,7 +49,7 @@
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                 </svg>
               </div>
-              <div class="bg-blue-400 rounded-md">
+              <div class="bg-blue-400 rounded-md cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -63,7 +63,7 @@
                   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
                 </svg>
               </div>
-              <div class="bg-orange-500 rounded-md">
+              <div class="bg-red-500 rounded-md cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-7 w-7 p-1.5 text-white"
@@ -80,25 +80,29 @@
               </div>
             </div>
           </div>
-          <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
-            <div class="text-left space-y-4 sm:w-7/12">
-              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
+          <div class="mt-6 sm:mt-3 md:flex sm:justify-between">
+            <div class="text-left space-y-4 md:w-7/12">
+              <h1 class="text-3xl sm:text-4xl text-blue-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
               <h2 class="sm:font-medium text-md leading-5 sm:text-lg">Full Stack Web Developer &bull; JavaScript &bull; NodeJS &bull; ReactJs &bull; VueJs &bull; Angular</h2>
               <p class="font-medium leading-5">
-                Ahmedabad, Gujarat,<br class="md:hidden"/> India - 380058
+                Ahmedabad, Gujarat, India - 380058
               </p>
             </div>
             <hr class="mt-4 text-center sm:hidden w-full m-auto border-gray-100"/>
-            <div class="sm:w-4/12 mt-4 sm:mt-0 space-y-4 flex flex-col items-start">
+            <div class="md:w-4/12 mt-6 md:mt-0 flex flex-col items-start">
               <div class="flex justify-center items-center border-b-1 border-gray-600">
                 <img class="h-7 w-7 object-fit bg-gray-100 rounded-lg" src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png" />
                 <h3 class="pl-2 font-semibold leading-4">Rivulet Digital</h3>
               </div>
-              <hr class="mt-4 text-center hidden sm:block w-full m-auto border-gray-100"/>
+              <hr class="text-center hidden sm:block w-full m-auto border-gray-100 dark:border-gray-700"/>
               <div class="flex justify-center items-center border-b-1 border-gray-600">
                 <img class="h-7 w-7 object-fit bg-gray-100 rounded-lg" src="http://www.amirajcollege.in/wp-content/uploads/2014/07/favicon.png" />
                 <h3 class="pl-2 font-semibold leading-4">Amiraj College of Engg. & Tech.</h3>
               </div>
+              <hr class="text-center hidden sm:block w-full m-auto border-gray-100 dark:border-gray-700"/>
+              <button class="px-4 py-2 w-full sm:w-auto border border-blue-900 bg-blue-100 text-blue-900 rounded-full">
+                Download Resume
+              </button>
             </div>
           </div>
         </div>
@@ -108,8 +112,8 @@
       <!-- About Me Section -->
       <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
         <div class="m-4 sm:m-12 space-y-4">
-          <h5 class="text-3xl">About</h5>
-          <div class="text-lg leading-snug">
+          <h5 class="text-3xl text-blue-900 dark:text-gray-100 font-normal">About</h5>
+          <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
           </div>
           <hr class="border-gray-300 dark:border-gray-600"/>
@@ -132,11 +136,7 @@
         <div class="m-4 sm:m-12">
           <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
             <div class="text-left space-y-4 sm:w-8/12">
-              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
-              <h2 class="sm:font-medium text-md leading-5 sm:text-lg">Full Stack Web Developer with JavaScript at core, with some knowledge of different stacks.</h2>
-              <p class="font-medium leading-5">
-                Ahmedabad, Gujarat,<br class="md:hidden"/> India - 380058
-              </p>
+              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Experience</h1>
             </div>
           </div>
         </div>
@@ -148,11 +148,7 @@
         <div class="m-4 sm:m-12">
           <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
             <div class="text-left space-y-4 sm:w-8/12">
-              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
-              <h2 class="sm:font-medium text-md leading-5 sm:text-lg">Full Stack Web Developer with JavaScript at core, with some knowledge of different stacks.</h2>
-              <p class="font-medium leading-5">
-                Ahmedabad, Gujarat,<br class="md:hidden"/> India - 380058
-              </p>
+              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Projects</h1>
             </div>
           </div>
         </div>
@@ -164,11 +160,7 @@
         <div class="m-4 sm:m-12">
           <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
             <div class="text-left space-y-4 sm:w-8/12">
-              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
-              <h2 class="sm:font-medium text-md leading-5 sm:text-lg">Full Stack Web Developer with JavaScript at core, with some knowledge of different stacks.</h2>
-              <p class="font-medium leading-5">
-                Ahmedabad, Gujarat,<br class="md:hidden"/> India - 380058
-              </p>
+              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Education</h1>
             </div>
           </div>
         </div>
@@ -180,11 +172,7 @@
         <div class="m-4 sm:m-12">
           <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
             <div class="text-left space-y-4 sm:w-8/12">
-              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
-              <h2 class="sm:font-medium text-md leading-5 sm:text-lg">Full Stack Web Developer with JavaScript at core, with some knowledge of different stacks.</h2>
-              <p class="font-medium leading-5">
-                Ahmedabad, Gujarat,<br class="md:hidden"/> India - 380058
-              </p>
+              <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Blogs</h1>
             </div>
           </div>
         </div>
@@ -193,7 +181,7 @@
       
       <!-- Credit Section -->
       <footer class="text-center">
-        Made with Love By Prashant 
+        Made with ❤ By Prashant 
       </footer>
     </div>
   </div>
