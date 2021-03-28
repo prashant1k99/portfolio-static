@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -11,7 +11,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontSize: ['hover']
+    },
   },
   plugins: [],
 }
