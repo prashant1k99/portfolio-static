@@ -15,7 +15,8 @@
 <body onscroll="test()" class="bg-yellow-100 dark:bg-gray-700 h-full w-full text-gray-600 dark:text-gray-300">
   <div>
     <div class="max-w-6xl m-auto">
-      <div class="mx-4 my-8 sm:m-16 space-y-10 sm:space-y-16">
+      <!-- <div class="mx-4 my-8 sm:m-16 space-y-10 sm:space-y-16"> -->
+      <div class="mx-4 my-8 sm:m-16">
         <!-- Overview Section -->
         <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
           <img class="h-36 sm:h-56 w-full object-cover object-center" src="assets/background-poster.jpg" alt="Prashant Portfolio Background Image" />
@@ -114,13 +115,13 @@
         </div>
         <!-- Overview Section Ends -->
         
-        <hr id="test" class="border-gray-600"/>
+        <hr id="test" class="hidden sm:block border-gray-600 mt-16"/>
 
         <div class="flex flex-row relative w-full container">
-          <div id="main-element" class="min-w-60 h-full float-left absolute">
-            <ul class="w-full text-lg text-blue-400 pl-6 space-y-1 list-disc">
+          <div id="main-element" class="hidden md:block min-w-min lg:min-w-60 h-full float-left absolute top-16">
+            <ul class="w-full text-lg text-blue-400 pl-6 space-y-1">
               <li class="hover:text-xl transition-all ease-in">
-                <a href="#about">About</a>
+                <a class="active" href="#about">About</a>
               </li>
               <li class="hover:text-xl transition-all ease-in">
                 <a href="#experience">Experience</a>
@@ -136,9 +137,10 @@
               </li>
             </ul>
           </div>
-          <div class="w-auto space-y-16 ml-64">            
+          <div class="w-auto space-y-16 md:ml-32 lg:ml-64">  
+            <hr id="about" class="border-0"/>          
             <!-- About Me Section -->
-            <div id="about" class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
               <div class="m-4 sm:m-12 space-y-4">
                 <h5 class="text-3xl text-blue-900 dark:text-gray-100 font-normal">About</h5>
                 <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
@@ -161,24 +163,64 @@
               </div>
             </div>
             <!-- About Me Section Ends -->
-      
+            <hr id="experience" class="border-0"/>
             <!-- Experience Section -->
-            <div id="experience" class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
               <div class="m-4 sm:m-12">
                 <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
-                  <div class="text-left space-y-4">
+                  <div class="text-left space-y-8">
                     <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Experience</h1>
-                    <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
+                    <div class="text-lg leading-snug text-gray-700 dark:text-gray-300 space-y-10">
+                      <div class="flex flex-col sm:border-l-4 border-gray-700 sm:pl-8 py-2">
+                        <div class="flex flex-row items-center">
+                          <img class="h-16 w-16" src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"/>
+                          <div class="pl-5">
+                            <h4 class="text-2xl">
+                              Rivulet Digital
+                            </h4>
+                            <p class="text-base">Full Stack JavaScript Developer</p>
+                            <div class="italic text-base">
+                              Feb 2021 - Present
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="border-l-2 border-gray-700 list-disc text-lg pl-3.5 mt-4">
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ex obcaecati at sed, magnam maiores quidem accusantium neque quos cum?</li>
+                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, velit.</li>
+                          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ex temporibus ad numquam voluptates. Vitae!</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col sm:border-l-4 border-gray-700 sm:pl-8 py-2">
+                        <div class="flex flex-row items-center">
+                          <img class="h-16 w-16" src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"/>
+                          <div class="pl-5">
+                            <h4 class="text-2xl">
+                              Rivulet Digital
+                            </h4>
+                            <p class="text-base">Full Stack JavaScript Developer</p>
+                            <div class="italic text-base">
+                              Feb 2021 - Present
+                            </div>
+                          </div>
+                        </div>
+                        <p class="flex justify-center mt-4 py-3 border border-gray-700 text-base cursor-pointer text-gray-400">
+                          Load More Details
+                        </p>
+                        <ul class="border-l-2 hidden border-gray-700 list-disc text-lg pl-3.5 mt-4">
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ex obcaecati at sed, magnam maiores quidem accusantium neque quos cum?</li>
+                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, velit.</li>
+                          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ex temporibus ad numquam voluptates. Vitae!</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Experience Section Ends -->
-      
+            <hr id="project" class="border-0"/>
             <!-- Project Section -->
-            <div id="project" class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
               <div class="m-4 sm:m-12">
                 <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
                   <div class="text-left space-y-4">
@@ -192,9 +234,9 @@
               </div>
             </div>
             <!-- Project Section Ends -->
-            
+            <hr id="education" class="border-0"/>
             <!-- Education Section -->
-            <div id="education" class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
               <div class="m-4 sm:m-12">
                 <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
                   <div class="text-left space-y-4">
@@ -209,9 +251,9 @@
               </div>
             </div>
             <!-- Education Section Ends -->
-            
+            <hr id="article" class="border-0"/>
             <!-- Articles Section -->
-            <div id="article" class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
               <div class="m-4 sm:m-12">
                 <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
                   <div class="text-left space-y-4">
@@ -244,10 +286,10 @@
       if (bounding.top <= 0) {
         mainElement.classList.remove('absolute')
         mainElement.classList.add('fixed')
-        mainElement.classList.add('top-16')
+        // mainElement.classList.add('top-16')
       } else {
         mainElement.classList.remove('fixed')
-        mainElement.classList.remove('top-16')
+        // mainElement.classList.remove('top-16')
         mainElement.classList.add('absolute')
       }
     }

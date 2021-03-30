@@ -5,4 +5,17 @@
   @apply py-0.5 rounded-full px-2.5 text-base font-semibold border inline-block cursor-pointer;
 }
 
+.active::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  content: '';
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #3e64ff;
+}
+
 @tailwind utilities;
