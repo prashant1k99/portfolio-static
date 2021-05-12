@@ -1,196 +1,614 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="tailwind.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-<body onscroll="test()" class="bg-yellow-100 dark:bg-gray-700 h-full w-full text-gray-600 dark:text-gray-300">
-  <div>
-    <div class="max-w-6xl m-auto">
-      <!-- <div class="mx-4 my-8 sm:m-16 space-y-10 sm:space-y-16"> -->
-      <div class="mx-4 my-8 sm:m-16">
-        <!-- Overview Section -->
-        <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
-          <img class="h-36 sm:h-56 w-full object-cover object-center" src="assets/background-poster.jpg" alt="Prashant Portfolio Background Image" />
-          <div class="m-4 -mt-4 sm:m-12 sm:-mt-12">
-            <div class="flex flex-row justify-between -mt-12 sm:-mt-20 items-center sm:items-end">
-              <div class="bg-gradient-to-tr to-blue-400 from-indigo-700 rounded-full">
-                <img class="h-28 sm:h-32 w-100 rounded-full p-1" src="assets/image.JPG" alt="Prashant Profile Iamge" />
-              </div>
-              <div class="flex mt-6 sm:-mt-2 sm:mb-1 justify-center space-x-2">
-                <div class="bg-blue-800 rounded-md focus:outline-none focus:ring-offset-green-500 cursor-pointer" tabindex="1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    class="h-7 w-7 p-1.5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                    <rect x="2" y="9" width="4" height="12" />
-                    <circle cx="4" cy="4" r="2" />
-                  </svg>
-                </div>
-                <div class="bg-gray-900 rounded-md focus:outline-none focus:ring-offset-red-400 cursor-pointer" tabindex="1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    class="h-7 w-7 p-1.5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                  </svg>
-                </div>
-                <div class="bg-blue-400 rounded-md cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    class="h-7 w-7 p-1.5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                  </svg>
-                </div>
-                <div class="bg-red-500 rounded-md cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-7 w-7 p-1.5 text-white"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="mt-6 space-y-3 sm:space-y-0 sm:mt-3 md:flex sm:justify-between">
-              <div class="text-left space-y-4 md:w-7/12">
-                <h1 class="text-3xl sm:text-4xl text-blue-900 dark:text-gray-100 font-normal">Prashant Singh</h1>
-                <h2 class="sm:font-medium text-md leading-5 sm:text-lg">Full Stack Web Developer &bull; JavaScript &bull; NodeJS &bull; ReactJs &bull; VueJs &bull; Angular</h2>
-                <p class="font-medium leading-5">
-                  Ahmedabad, Gujarat, India - 380058
-                </p>
-              </div>
-              <hr class="text-center sm:hidden w-full m-auto border-gray-700"/>
-              <div class="md:w-4/12 md:mt-0 flex flex-col items-start space-y-3">
-                <div class="flex w-full items-center p-2 border rounded-lg cursor-pointer border-gray-600">
-                  <img class="h-7 w-7 object-fit bg-gray-100 rounded-lg" src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png" />
-                  <h3 class="pl-2 font-semibold leading-4">Rivulet Digital</h3>
-                </div>
-                <div class="flex w-full items-center p-2 border rounded-lg cursor-pointer border-gray-600">
-                  <img class="h-7 w-7 object-fit bg-gray-100 rounded-lg" src="http://www.amirajcollege.in/wp-content/uploads/2014/07/favicon.png" />
-                  <h3 class="pl-2 font-semibold leading-4">Amiraj College of Engg. & Tech.</h3>
-                </div>
-                <hr class="border-gray-600 w-full"/>
-                <button class="flex justify-center p-2 w-full border border-blue-900 bg-blue-100 text-blue-900 rounded-lg">
-                  Download Resume
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Overview Section Ends -->
-        
-        <hr id="test" class="hidden sm:block border-gray-600 mt-16"/>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="tailwind.css" />
+		<style>
+			html {
+				scroll-behavior: smooth;
+				scroll-padding: 30px 0 0 30px;
+			}
+		</style>
+	</head>
+	<body
+		onscroll="test()"
+		class="
+			bg-yellow-100
+			dark:bg-gray-700
+			h-full
+			w-full
+			text-gray-600
+			dark:text-gray-300
+		"
+	>
+		<div>
+			<div class="max-w-6xl m-auto">
+				<!-- <div class="mx-4 my-8 sm:m-16 space-y-10 sm:space-y-16"> -->
+				<div class="mx-4 my-8 sm:m-16">
+					<!-- Overview Section -->
+					<div
+						class="
+							bg-white
+							dark:bg-gray-800
+							rounded-2xl
+							overflow-hidden
+							sm:shadow-lg
+						"
+					>
+						<img
+							class="h-36 sm:h-56 w-full object-cover object-center"
+							src="assets/background-poster.jpg"
+							alt="Prashant Portfolio Background Image"
+						/>
+						<div class="m-4 -mt-4 sm:m-12 sm:-mt-12">
+							<div
+								class="
+									flex flex-row
+									justify-between
+									-mt-12
+									sm:-mt-20
+									items-center
+									sm:items-end
+								"
+							>
+								<div
+									class="
+										bg-gradient-to-tr
+										to-blue-400
+										from-indigo-700
+										rounded-full
+									"
+								>
+									<img
+										class="h-28 sm:h-32 w-100 rounded-full p-1"
+										src="assets/image.JPG"
+										alt="Prashant Profile Iamge"
+									/>
+								</div>
+								<div
+									class="flex mt-6 sm:-mt-2 sm:mb-1 justify-center space-x-2"
+								>
+									<div
+										class="
+											bg-blue-800
+											rounded-md
+											focus:outline-none
+											focus:ring-offset-green-500
+											cursor-pointer
+										"
+										tabindex="1"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="h-7 w-7 p-1.5 text-white"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+											/>
+											<rect x="2" y="9" width="4" height="12" />
+											<circle cx="4" cy="4" r="2" />
+										</svg>
+									</div>
+									<div
+										class="
+											bg-gray-900
+											rounded-md
+											focus:outline-none
+											focus:ring-offset-red-400
+											cursor-pointer
+										"
+										tabindex="1"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="h-7 w-7 p-1.5 text-white"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+											/>
+										</svg>
+									</div>
+									<div class="bg-blue-400 rounded-md cursor-pointer">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="h-7 w-7 p-1.5 text-white"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+											/>
+										</svg>
+									</div>
+									<div class="bg-red-500 rounded-md cursor-pointer">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="h-7 w-7 p-1.5 text-white"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+											/>
+											<polyline points="22,6 12,13 2,6" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									mt-6
+									space-y-3
+									sm:space-y-0
+									sm:mt-3
+									md:flex
+									sm:justify-between
+								"
+							>
+								<div class="text-left space-y-4 md:w-7/12">
+									<h1
+										class="
+											text-3xl
+											sm:text-4xl
+											text-blue-900
+											dark:text-gray-100
+											font-normal
+										"
+									>
+										Prashant Singh
+									</h1>
+									<h2 class="sm:font-medium text-md leading-5 sm:text-lg">
+										Full Stack Web Developer &bull; JavaScript &bull; NodeJS
+										&bull; ReactJs &bull; VueJs &bull; Angular
+									</h2>
+									<p class="font-medium leading-5">
+										Ahmedabad, Gujarat, India - 380058
+									</p>
+								</div>
+								<hr
+									class="text-center sm:hidden w-full m-auto border-gray-700"
+								/>
+								<div
+									class="md:w-4/12 md:mt-0 flex flex-col items-start space-y-3"
+								>
+									<div
+										class="
+											flex
+											w-full
+											items-center
+											p-2
+											border
+											rounded-lg
+											cursor-pointer
+											border-gray-600
+										"
+									>
+										<img
+											class="h-7 w-7 object-fit bg-gray-100 rounded-lg"
+											src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"
+										/>
+										<h3 class="pl-2 font-semibold leading-4">
+											Rivulet Digital
+										</h3>
+									</div>
+									<div
+										class="
+											flex
+											w-full
+											items-center
+											p-2
+											border
+											rounded-lg
+											cursor-pointer
+											border-gray-600
+										"
+									>
+										<img
+											class="h-7 w-7 object-fit bg-gray-100 rounded-lg"
+											src="http://www.amirajcollege.in/wp-content/uploads/2014/07/favicon.png"
+										/>
+										<h3 class="pl-2 font-semibold leading-4">
+											Amiraj College of Engg. & Tech.
+										</h3>
+									</div>
+									<hr class="border-gray-600 w-full" />
+									<button
+										class="
+											flex
+											justify-center
+											p-2
+											w-full
+											border border-blue-900
+											bg-blue-100
+											text-blue-900
+											rounded-lg
+										"
+									>
+										Download Resume
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Overview Section Ends -->
 
-        <div class="flex flex-row relative w-full container">
-          <div id="main-element" class="hidden md:block min-w-min lg:min-w-60 h-full float-left absolute top-16">
-            <ul class="w-full text-lg text-blue-400 pl-6 space-y-1">
-              <li class="hover:text-xl transition-all ease-in">
-                <a class="active" href="#about">About</a>
-              </li>
-              <li class="hover:text-xl transition-all ease-in">
-                <a href="#experience">Experience</a>
-              </li>
-              <li class="hover:text-xl transition-all ease-in">
-                <a href="#project">Projects</a>
-              </li>
-              <li class="hover:text-xl transition-all ease-in">
-                <a href="#education">Education</a>
-              </li>
-              <li class="hover:text-xl transition-all ease-in">
-                <a href="#article">Article</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-auto space-y-16 md:ml-32 lg:ml-64">  
-            <hr id="about" class="border-0"/>          
-            <!-- About Me Section -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
-              <div class="m-4 sm:m-12 space-y-4">
-                <h5 class="text-3xl text-blue-900 dark:text-gray-100 font-normal">About</h5>
-                <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                </div>
-                <hr class="border-gray-300 dark:border-gray-600"/>
-                <div class="text-lg leading-loose">
-                  <div class="chip border-blue-500 bg-blue-50 text-blue-900">
-                    NextJs
-                  </div>
-                  <div class="chip border-blue-600 bg-blue-50 text-blue-900">React</div>
-                  <div class="chip border-green-500 bg-green-50 text-green-900">Vue</div>
-                  <div class="chip border-blue-600 bg-blue-50 text-blue-900">React</div>
-                  <div class="chip border-green-500 bg-green-50 text-green-900">Vue</div>
-                  <div class="chip border-green-700 bg-green-50 text-green-900">Node</div>
-                  <div class="chip border-yellow-500 bg-yellow-50 text-yellow-900">Firebase</div>
-                  <div class="chip border-green-700 bg-green-50 text-green-900">Node</div>
-                  <div class="chip border-yellow-500 bg-yellow-50 text-yellow-900">Firebase</div>
-                </div>
-              </div>
-            </div>
-            <!-- About Me Section Ends -->
-            <hr id="experience" class="border-0"/>
-            <!-- Experience Section -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
-              <div class="m-4 sm:m-12">
-                <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
-                  <div class="text-left space-y-8">
-                    <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Experience</h1>
-                    <div class="text-lg leading-snug text-gray-700 dark:text-gray-300 space-y-10">
-                      <div class="flex flex-col sm:border-l-4 border-gray-700 sm:pl-8 py-2">
-                        <div class="flex flex-row items-center">
-                          <img class="h-16 w-16" src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"/>
-                          <div class="pl-5">
-                            <h4 class="text-2xl">
-                              Rivulet Digital
-                            </h4>
-                            <p class="text-base">Full Stack JavaScript Developer</p>
-                            <div class="italic text-base">
-                              Feb 2021 - Present
-                            </div>
-                          </div>
-                        </div>
-                        <ul class="border-l-2 border-gray-700 list-disc text-lg pl-3.5 mt-4">
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ex obcaecati at sed, magnam maiores quidem accusantium neque quos cum?</li>
-                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, velit.</li>
-                          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ex temporibus ad numquam voluptates. Vitae!</li>
-                        </ul>
-                      </div>
-                      <div class="flex flex-col sm:border-l-4 border-gray-700 sm:pl-8 py-2">
+					<hr id="test" class="hidden sm:block border-gray-600 my-8" />
+
+					<div class="flex flex-row relative w-full container">
+						<div
+							id="main-element"
+							class="
+								hidden
+								md:block
+								min-w-min
+								lg:min-w-60
+								h-full
+								float-left
+								absolute
+							"
+						>
+							<ul class="w-44 text-lg text-indigo-500 space-y-1">
+								<li
+									id="about-link"
+									name="nav-link"
+									class="
+										cursor-pointer
+										flex
+										hover:bg-gray-800
+										hover:text-indigo-400
+										px-2.5
+										py-1
+										rounded-lg
+									"
+									onclick="testFn('about', 'about-link')"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-6 w-6"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path d="M12 14l9-5-9-5-9 5 9 5z" />
+										<path
+											d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+										/>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+										/>
+									</svg>
+									<p class="pl-2">About</p>
+								</li>
+								<li
+									id="experience-link"
+									name="nav-link"
+									class="
+										cursor-pointer
+										hover:bg-gray-800
+										hover:text-indigo-400
+										flex
+										px-2.5
+										py-1
+										rounded-lg
+									"
+									onclick="testFn('experience', 'experience-link')"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-6 w-6"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path d="M12 14l9-5-9-5-9 5 9 5z" />
+										<path
+											d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+										/>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+										/>
+									</svg>
+									<p class="pl-2">Experience</p>
+								</li>
+								<li
+									id="project-link"
+									name="nav-link"
+									class="
+										cursor-pointer
+										hover:bg-gray-800
+										hover:text-indigo-400
+										flex
+										px-2.5
+										py-1
+										rounded-lg
+									"
+									onclick="testFn('project', 'project-link')"
+								>
+									Projects
+								</li>
+								<li
+									id="education-link"
+									name="nav-link"
+									class="
+										cursor-pointer
+										hover:bg-gray-800
+										hover:text-indigo-400
+										flex
+										px-2.5
+										py-1
+										rounded-lg
+									"
+									onclick="testFn('education', 'education-link')"
+								>
+									Education
+								</li>
+								<li
+									id="article-link"
+									name="nav-link"
+									class="
+										cursor-pointer
+										hover:bg-gray-800
+										hover:text-indigo-400
+										flex
+										px-2.5
+										py-1
+										rounded-lg
+									"
+									onclick="testFn('article', 'article-link')"
+								>
+									Article
+								</li>
+							</ul>
+						</div>
+						<div class="w-auto space-y-8 md:ml-52 lg:ml-64">
+							<!-- About Me Section -->
+							<div
+								id="about"
+								class="
+									bg-white
+									dark:bg-gray-800
+									rounded-2xl
+									overflow-hidden
+									sm:shadow-lg
+								"
+							>
+								<div class="m-4 sm:m-12 space-y-4">
+									<h5
+										class="
+											text-3xl text-blue-900
+											dark:text-gray-100
+											font-normal
+										"
+									>
+										About
+									</h5>
+									<div
+										class="
+											text-lg
+											leading-snug
+											text-gray-700
+											dark:text-gray-300
+										"
+									>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Reiciendis minus quas, provident autem saepe minima fuga
+										perferendis pariatur beatae placeat dolor ab aut animi
+										dignissimos vel tenetur hic architecto repellendus vitae
+										dicta suscipit nesciunt. Amet esse consequatur debitis magni
+										qui officiis delectus totam aspernatur consequuntur
+										voluptatum dolorum, in excepturi iure.
+									</div>
+									<hr class="border-gray-300 dark:border-gray-600" />
+									<div class="text-lg leading-loose">
+										<div class="chip border-blue-500 bg-blue-50 text-blue-900">
+											NextJs
+										</div>
+										<div class="chip border-blue-600 bg-blue-50 text-blue-900">
+											React
+										</div>
+										<div
+											class="chip border-green-500 bg-green-50 text-green-900"
+										>
+											Vue
+										</div>
+										<div class="chip border-blue-600 bg-blue-50 text-blue-900">
+											React
+										</div>
+										<div
+											class="chip border-green-500 bg-green-50 text-green-900"
+										>
+											Vue
+										</div>
+										<div
+											class="chip border-green-700 bg-green-50 text-green-900"
+										>
+											Node
+										</div>
+										<div
+											class="
+												chip
+												border-yellow-500
+												bg-yellow-50
+												text-yellow-900
+											"
+										>
+											Firebase
+										</div>
+										<div
+											class="chip border-green-700 bg-green-50 text-green-900"
+										>
+											Node
+										</div>
+										<div
+											class="
+												chip
+												border-yellow-500
+												bg-yellow-50
+												text-yellow-900
+											"
+										>
+											Firebase
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- About Me Section Ends -->
+							<!-- Experience Section -->
+							<div
+								id="experience"
+								class="
+									bg-white
+									dark:bg-gray-800
+									rounded-2xl
+									overflow-hidden
+									sm:shadow-lg
+								"
+							>
+								<div class="m-4 sm:m-12">
+									<div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
+										<div class="text-left space-y-8">
+											<h1
+												class="
+													text-3xl
+													sm:text-4xl
+													text-gray-900
+													dark:text-gray-100
+													font-normal
+												"
+											>
+												Experience
+											</h1>
+											<div
+												class="
+													text-lg
+													leading-snug
+													text-gray-700
+													dark:text-gray-300
+													space-y-10
+												"
+											>
+												<div
+													class="
+														flex flex-col
+														sm:border-l-4
+														border-gray-700
+														sm:pl-8
+														py-2
+													"
+												>
+													<div class="flex flex-row items-center">
+														<img
+															class="h-16 w-16"
+															src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"
+														/>
+														<div class="pl-5">
+															<h4 class="text-2xl">Rivulet Digital</h4>
+															<p class="text-base">
+																Full Stack JavaScript Developer
+															</p>
+															<div class="italic text-base">
+																Feb 2021 - Present
+															</div>
+														</div>
+													</div>
+													<p
+														id="exp-info"
+														class="text-base cursor-pointer text-gray-400 mt-4"
+														onclick="expInfo()"
+													>
+														See More Details
+													</p>
+													<ul
+														id="exp-detail"
+														class="
+															border-l-2 border-gray-700
+															list-disc
+															text-lg
+															pl-3.5
+															mt-4
+															hidden
+														"
+													>
+														<li>
+															Lorem ipsum dolor sit amet, consectetur
+															adipisicing elit. Porro ex obcaecati at sed,
+															magnam maiores quidem accusantium neque quos cum?
+														</li>
+														<li>
+															Lorem ipsum dolor sit amet consectetur adipisicing
+															elit. Voluptatum, velit.
+														</li>
+														<li>
+															Lorem, ipsum dolor sit amet consectetur
+															adipisicing elit. Porro ex temporibus ad numquam
+															voluptates. Vitae!
+														</li>
+														<li onclick="expInfo()">See less</li>
+													</ul>
+												</div>
+												<div
+													class="
+														flex flex-col
+														sm:border-l-4
+														border-gray-700
+														sm:pl-8
+														py-2
+													"
+												>
+													<div class="flex flex-row items-center">
+														<img
+															class="h-16 w-16"
+															src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"
+														/>
+														<div class="pl-5">
+															<h4 class="text-2xl">Rivulet Digital</h4>
+															<p class="text-base">
+																Full Stack JavaScript Developer
+															</p>
+															<div class="italic text-base">
+																Feb 2021 - Present
+															</div>
+														</div>
+													</div>
+													<p
+														class="text-base cursor-pointer text-gray-400 mt-4"
+													>
+														See More Details
+													</p>
+													<!-- <p class="flex justify-center mt-4 py-3 border border-gray-700 text-base cursor-pointer text-gray-400">
+                          Load More Details
+                        </p> -->
+												</div>
+												<!-- <div class="flex flex-col sm:border-l-4 border-gray-700 sm:pl-8 py-2">
                         <div class="flex flex-row items-center">
                           <img class="h-16 w-16" src="https://cdn.rivuletdigital.com/rivuletdigital/uploads/2020/07/cropped-ms-icon-310x310-1-180x180.png"/>
                           <div class="pl-5">
@@ -206,93 +624,231 @@
                         <p class="flex justify-center mt-4 py-3 border border-gray-700 text-base cursor-pointer text-gray-400">
                           Load More Details
                         </p>
-                        <ul class="border-l-2 hidden border-gray-700 list-disc text-lg pl-3.5 mt-4">
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ex obcaecati at sed, magnam maiores quidem accusantium neque quos cum?</li>
-                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, velit.</li>
-                          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ex temporibus ad numquam voluptates. Vitae!</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Experience Section Ends -->
-            <hr id="project" class="border-0"/>
-            <!-- Project Section -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
-              <div class="m-4 sm:m-12">
-                <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
-                  <div class="text-left space-y-4">
-                    <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Projects</h1>
-                    <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt.
-                      Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project Section Ends -->
-            <hr id="education" class="border-0"/>
-            <!-- Education Section -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
-              <div class="m-4 sm:m-12">
-                <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
-                  <div class="text-left space-y-4">
-                    <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Education</h1>
-                    <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Education Section Ends -->
-            <hr id="article" class="border-0"/>
-            <!-- Articles Section -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden sm:shadow-lg">
-              <div class="m-4 sm:m-12">
-                <div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
-                  <div class="text-left space-y-4">
-                    <h1 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-100 font-normal">Article</h1>
-                    <div class="text-lg leading-snug text-gray-700 dark:text-gray-300">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minus quas, provident autem saepe minima fuga perferendis pariatur beatae placeat dolor ab aut animi dignissimos vel tenetur hic architecto repellendus vitae dicta suscipit nesciunt. Amet esse consequatur debitis magni qui officiis delectus totam aspernatur consequuntur voluptatum dolorum, in excepturi iure.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Articles Section Ends -->
-          </div>
-        </div>
-        
-        <!-- Credit Section -->
-        <footer class="text-center">
-          Made with ❤ By Prashant 
-        </footer>
-      </div>
-    </div>
-  </div>
-  <!-- <script src="./main.js"/> -->
-  <script>
-    function test() {
-      const elem = document.querySelector('#test');
-      const bounding = elem.getBoundingClientRect();
-      const mainElement = document.querySelector('#main-element');
-      if (bounding.top <= 0) {
-        mainElement.classList.remove('absolute')
-        mainElement.classList.add('fixed')
-        // mainElement.classList.add('top-16')
-      } else {
-        mainElement.classList.remove('fixed')
-        // mainElement.classList.remove('top-16')
-        mainElement.classList.add('absolute')
-      }
-    }
-  </script>
-</body>
+                      </div> -->
+											</div>
+											<p
+												class="
+													flex
+													w-100
+													justify-center
+													mt-4
+													py-3
+													border border-gray-700
+													text-base
+													cursor-pointer
+													text-gray-400
+												"
+											>
+												Load More
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Experience Section Ends -->
+							<!-- Project Section -->
+							<div
+								id="project"
+								class="
+									bg-white
+									dark:bg-gray-800
+									rounded-2xl
+									overflow-hidden
+									sm:shadow-lg
+								"
+							>
+								<div class="m-4 sm:m-12">
+									<div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
+										<div class="text-left space-y-4">
+											<h1
+												class="
+													text-3xl
+													sm:text-4xl
+													text-gray-900
+													dark:text-gray-100
+													font-normal
+												"
+											>
+												Projects
+											</h1>
+											<div
+												class="
+													text-lg
+													leading-snug
+													text-gray-700
+													dark:text-gray-300
+												"
+											>
+												Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Reiciendis minus quas, provident autem saepe
+												minima fuga perferendis pariatur beatae placeat dolor ab
+												aut animi dignissimos vel tenetur hic architecto
+												repellendus vitae dicta suscipit nesciunt. Amet esse
+												consequatur debitis magni qui officiis delectus totam
+												aspernatur consequuntur voluptatum dolorum, in excepturi
+												iure.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Project Section Ends -->
+							<!-- Education Section -->
+							<div
+								id="education"
+								class="
+									bg-white
+									dark:bg-gray-800
+									rounded-2xl
+									overflow-hidden
+									sm:shadow-lg
+								"
+							>
+								<div class="m-4 sm:m-12">
+									<div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
+										<div class="text-left space-y-4">
+											<h1
+												class="
+													text-3xl
+													sm:text-4xl
+													text-gray-900
+													dark:text-gray-100
+													font-normal
+												"
+											>
+												Education
+											</h1>
+											<div
+												class="
+													text-lg
+													leading-snug
+													text-gray-700
+													dark:text-gray-300
+												"
+											>
+												Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Reiciendis minus quas, provident autem saepe
+												minima fuga perferendis pariatur beatae placeat dolor ab
+												aut animi dignissimos vel tenetur hic architecto
+												repellendus vitae dicta suscipit nesciunt. Amet esse
+												consequatur debitis magni qui officiis delectus totam
+												aspernatur consequuntur voluptatum dolorum, in excepturi
+												iure. Lorem ipsum dolor, sit amet consectetur
+												adipisicing elit. Reiciendis minus quas, provident autem
+												saepe minima fuga perferendis pariatur beatae placeat
+												dolor ab aut animi dignissimos vel tenetur hic
+												architecto repellendus vitae dicta suscipit nesciunt.
+												Amet esse consequatur debitis magni qui officiis
+												delectus totam aspernatur consequuntur voluptatum
+												dolorum, in excepturi iure. Lorem ipsum dolor, sit amet
+												consectetur adipisicing elit. Reiciendis minus quas,
+												provident autem saepe minima fuga perferendis pariatur
+												beatae placeat dolor ab aut animi dignissimos vel
+												tenetur hic architecto repellendus vitae dicta suscipit
+												nesciunt. Amet esse consequatur debitis magni qui
+												officiis delectus totam aspernatur consequuntur
+												voluptatum dolorum, in excepturi iure.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Education Section Ends -->
+							<!-- Articles Section -->
+							<div
+								id="article"
+								class="
+									bg-white
+									dark:bg-gray-800
+									rounded-2xl
+									overflow-hidden
+									sm:shadow-lg
+								"
+							>
+								<div class="m-4 sm:m-12">
+									<div class="mt-6 sm:mt-3 sm:flex sm:justify-between">
+										<div class="text-left space-y-4">
+											<h1
+												class="
+													text-3xl
+													sm:text-4xl
+													text-gray-900
+													dark:text-gray-100
+													font-normal
+												"
+											>
+												Article
+											</h1>
+											<div
+												class="
+													text-lg
+													leading-snug
+													text-gray-700
+													dark:text-gray-300
+												"
+											>
+												Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Reiciendis minus quas, provident autem saepe
+												minima fuga perferendis pariatur beatae placeat dolor ab
+												aut animi dignissimos vel tenetur hic architecto
+												repellendus vitae dicta suscipit nesciunt. Amet esse
+												consequatur debitis magni qui officiis delectus totam
+												aspernatur consequuntur voluptatum dolorum, in excepturi
+												iure. Lorem ipsum dolor, sit amet consectetur
+												adipisicing elit. Reiciendis minus quas, provident autem
+												saepe minima fuga perferendis pariatur beatae placeat
+												dolor ab aut animi dignissimos vel tenetur hic
+												architecto repellendus vitae dicta suscipit nesciunt.
+												Amet esse consequatur debitis magni qui officiis
+												delectus totam aspernatur consequuntur voluptatum
+												dolorum, in excepturi iure.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Articles Section Ends -->
+						</div>
+					</div>
+
+					<!-- Credit Section -->
+					<footer class="text-center mt-16">Made with ❤ By Prashant</footer>
+				</div>
+			</div>
+		</div>
+		<script>
+			function test() {
+				const elem = document.querySelector('#test')
+				const bounding = elem.getBoundingClientRect()
+				const mainElement = document.querySelector('#main-element')
+				if (bounding.top <= 0) {
+					mainElement.classList.remove('absolute')
+					mainElement.classList.add('fixed')
+					mainElement.classList.add('top-8')
+				} else {
+					mainElement.classList.remove('top-8')
+					mainElement.classList.remove('fixed')
+					mainElement.classList.add('absolute')
+				}
+			}
+			function testFn(el, link) {
+				const testExo = document.getElementById(el)
+				const allLinks = document.getElementsByName('nav-link')
+				const linkEl = document.getElementById(link)
+				allLinks.forEach((el) => {
+					el.classList.remove('bg-gray-800')
+					el.classList.remove('text-indigo-400')
+				})
+				linkEl.classList.add('bg-gray-800')
+				linkEl.classList.add('text-indigo-400')
+				testExo.scrollIntoView()
+			}
+			function expInfo() {
+				const el1 = document.getElementById('exp-info')
+				const el2 = document.getElementById('exp-detail')
+				el1.classList.toggle('hidden')
+				el2.classList.toggle('hidden')
+			}
+		</script>
+	</body>
 </html>
